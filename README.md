@@ -18,7 +18,7 @@ This is a simple joke generator utilizing the open-source JokeAPI which can be f
 
 - [React](https://reactjs.org/) - JS library
 - React Icons
-- DaisyUI components
+- DaisyUI
 - Tailwindcss
 - Axios
 
