@@ -1,4 +1,4 @@
-import { BsCodeSquare } from 'react-icons/bs';
+import { FaRegLaughBeam } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
 
 import { Link } from 'react-router-dom';
@@ -10,7 +10,7 @@ const Navbar = props => {
       <nav className="navbar mb-12 shadow-lg bg-neutral text-neutral-content">
         <div className="container mx-auto">
           <div className="flex px-2">
-            <BsCodeSquare className="inline pr-2 text-4xl" />
+            <FaRegLaughBeam className="inline pr-2 text-4xl" />
             <Link
               to="/"
               className="text-2xl font-bold align-middle text-teal-600"
@@ -50,7 +50,7 @@ const Navbar = props => {
 };
 
 Navbar.defaultProps = {
-  title: 'Title',
+  title: 'Jokes',
 };
 
 Navbar.propTypes = {
