@@ -7,15 +7,14 @@ const JokesResults = () => {
   const { jokes, loading } = useContext(JokeContext);
 
   // check that a joke has been fetched and isn't still loading
+  // layout determined by type of joke (single vs twopart)
   if (jokes.type && !loading) {
     return (
       <Wrapper>
         <div className="card drop-shadow-lg bg-teal-600 text-center text-primary-content w-96">
           <div className="card-body">
-            <h2 className="font-bold text-xl">
-              {jokes.type === 'single' ? jokes.joke : jokes.setup}
-            </h2>
-            {jokes.type === 'twopart' ? <p>{jokes.delivery}</p> : null}
+            {jokes.type === "single" && <h2>{jokes.joke}</h2>}
+            {jokes.type === "twopart" && <><h2 className='font-bold text-xl'>{jokes.setup}</h2><p>{jokes.delivery}</p></>}
           </div>
         </div>
       </Wrapper>
