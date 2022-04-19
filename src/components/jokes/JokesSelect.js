@@ -25,22 +25,15 @@ const JokesSelect = () => {
   const handleChange = e => {
     const selection = e.target.value;
 
-    console.log(selection);
-
     setFormData(prevFormData => ({
       ...prevFormData,
       selected: selection,
     }))
 
-    if (formData.safemodeChecked && selection === "Dark") {
-      setBtnDisabled(true);
-    } else {
-      setBtnDisabled(false);
-    }
+    setBtnDisabled(formData.safemodeChecked && selection === "Dark" ? true : false);
   };
 
   const handleCheckbox = e => {
-    console.log(e.target.checked);
     const isOn = e.target.checked;
 
     setFormData(prevFormData => ({
@@ -48,11 +41,7 @@ const JokesSelect = () => {
       safemodeChecked: isOn,
     }))
 
-    if(isOn && formData.selected === "Dark") {
-      setBtnDisabled(true);
-    } else {
-      setBtnDisabled(false)
-    }
+    setBtnDisabled(isOn && formData.selected === "Dark" ? true : false);
   }
 
   return (
