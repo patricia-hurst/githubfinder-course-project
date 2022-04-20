@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import JokesResults from '../components/jokes/JokesResults';
 import JokesSelect from '../components/jokes/JokesSelect';
 
@@ -5,11 +7,10 @@ import JokesSelect from '../components/jokes/JokesSelect';
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center">
-      <h2 className="text-2xl text-teal-600 font-bold mb-16">Joke Generator</h2>
+    <Fragment>
       <JokesSelect />
       <JokesResults />
-    </div>
+    </Fragment>
   );
 };
 
