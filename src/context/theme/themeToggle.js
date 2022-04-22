@@ -10,12 +10,12 @@ const Toggle = () => {
       {theme === 'dark' ? (
         <BsFillMoonFill
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className="dark:text-slate-200 text-2xl cursor-pointer"
+          className="dark:text-slate-200 text-xl md:text-2xl cursor-pointer"
         />
       ) : (
         <BsSunFill
           onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-          className="text-slate-200 text-2xl cursor-pointer"
+          className="text-slate-200 text-xl md:text-2xl cursor-pointer"
         />
       )}
     </>

@@ -3,15 +3,13 @@ import Toggle from '../../context/theme/themeToggle';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 
-// NOTE: html layout needs to be updated in the master branch even if decide not to do darkmode (just delete the toggle component)
-
 const Navbar = props => {
   return (
     <header>
-      <nav className="navbar mb-12 bg-teal-600 text-slate-200 dark:bg-neutral">
+      <nav className="navbar bg-teal-600 text-slate-200 dark:bg-neutral">
         <div className="container mx-auto">
           <div className="flex items-center justify-between w-full">
-            <div className="nav-left">
+            <div className="nav-left border-b-2 border-transparent">
               <FaRegLaughBeam className="inline pr-2 text-4xl" />
               <Link
                 to="/"
@@ -23,13 +21,13 @@ const Navbar = props => {
             <div className="nav-right flex gap-4 items-center">
               <Link
                 to="/"
-                className="text-3xl transition-border-b duration-300 border-b-2 border-transparent hover:border-slate-200 dark:hover:border-teal-600"
+                className="text-xl md:text-3xl transition-border-b duration-300 border-b-2 border-transparent hover:border-slate-200 dark:hover:border-teal-600"
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="text-3xl transition-border-b duration-300 border-b-2 border-transparent hover:border-slate-200 dark:hover:border-teal-600"
+                className="text-xl md:text-3xl transition-border-b duration-300 border-b-2 border-transparent hover:border-slate-200 dark:hover:border-teal-600"
               >
                 About
               </Link>
