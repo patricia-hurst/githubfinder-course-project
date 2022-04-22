@@ -1,46 +1,39 @@
 import { FaRegLaughBeam } from 'react-icons/fa';
-import { AiOutlineMail } from 'react-icons/ai';
-
+import Toggle from '../../context/theme/themeToggle';
 import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
+
+// NOTE: html layout needs to be updated in the master branch even if decide not to do darkmode (just delete the toggle component)
 
 const Navbar = props => {
   return (
     <header>
-      <nav className="navbar mb-12 shadow-lg bg-neutral text-neutral-content">
+      <nav className="navbar mb-12 bg-teal-600 text-slate-200 dark:bg-neutral">
         <div className="container mx-auto">
-          <div className="flex px-2">
-            <FaRegLaughBeam className="inline pr-2 text-4xl" />
-            <Link
-              to="/"
-              className="text-2xl font-bold align-middle text-teal-600"
-            >
-              {props.title}
-            </Link>
-          </div>
-          <div className="flex-1 px-2 mx-2">
-            <div className="flex content-center justify-end">
+          <div className="flex items-center justify-between w-full">
+            <div className="nav-left">
+              <FaRegLaughBeam className="inline pr-2 text-4xl" />
               <Link
                 to="/"
-                className="px-3 text-3xl transition ease hover:text-teal-600 duration-300"
+                className="text-2xl font-bold align-middle dark:text-teal-600"
+              >
+                {props.title}
+              </Link>
+            </div>
+            <div className="nav-right flex gap-4 items-center">
+              <Link
+                to="/"
+                className="text-3xl transition-border-b duration-300 border-b-2 border-transparent hover:border-slate-200 dark:hover:border-teal-600"
               >
                 Home
               </Link>
               <Link
                 to="/about"
-                className="px-3 text-3xl transition ease hover:text-teal-600 duration-300"
+                className="text-3xl transition-border-b duration-300 border-b-2 border-transparent hover:border-slate-200 dark:hover:border-teal-600"
               >
                 About
               </Link>
-              <a
-                href="http://www.yahoo.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                // pt-1.5 class fixes alignment with other navbar links
-                className="px-3 text-3xl transition ease hover:text-teal-600 duration-300 pt-1.5"
-              >
-                <AiOutlineMail />
-              </a>
+              <Toggle />
             </div>
           </div>
         </div>
