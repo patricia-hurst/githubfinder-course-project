@@ -5,7 +5,7 @@ import Wrapper from '../components/ui/Wrapper';
 
 const Home = () => {
   return (
-    <main>
+    <main className="flex-grow h-auto">
       <Wrapper>
         <JokesSelect />
         <JokesResults />

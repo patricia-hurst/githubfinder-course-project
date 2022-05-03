@@ -82,7 +82,7 @@ const JokesSelect = () => {
             Get Joke
           </button>
         </div>
-        <div className="joke-safemode-row mb-16">
+        <div className="joke-safemode-row mb-8">
           <label htmlFor="safemodeChecked" className="text-lg italic mr-6">
             Safe Mode?
           </label>
