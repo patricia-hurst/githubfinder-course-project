@@ -20,7 +20,6 @@ This is a simple joke generator utilizing the open-source JokeAPI which can be f
 - React Icons
 - DaisyUI
 - Tailwindcss
-- Axios
 
 ### Continued development
 
