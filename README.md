@@ -23,7 +23,7 @@ This is a simple joke generator utilizing the open-source JokeAPI which can be f
 
 ### Continued development
 
-- Add additional styling and functionality to joke generator; add "About" page content. Add a link to the JokeAPI in the footer.
+- Add additional styling and functionality to joke generator.
 
 ## Author
 
