@@ -12,7 +12,7 @@ This is a simple joke generator utilizing the open-source JokeAPI which can be f
 
 ### Links
 
-- Live Site URL: [Add live site URL here](coming soon)
+- Live Site URL: [https://simple-joke-generator-react.vercel.app/]
 
 ### Built with
 
