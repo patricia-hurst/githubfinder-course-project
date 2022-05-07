@@ -5,12 +5,12 @@ import Wrapper from '../components/ui/Wrapper';
 
 const Home = () => {
   return (
-    <main className="flex-grow h-auto">
-      <Wrapper>
+    <Wrapper>
+      <main>
         <JokesSelect />
         <JokesResults />
-      </Wrapper>
-    </main>
+      </main>
+    </Wrapper>
   );
 };
 
