@@ -8,7 +8,6 @@ This is a simple joke generator utilizing the open-source JokeAPI which can be f
 - [Built with](#built-with)
 - [Continued development](#continued-development)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### Links
 
@@ -23,7 +22,7 @@ This is a simple joke generator utilizing the open-source JokeAPI which can be f
 
 ### Continued development
 
-- Add additional styling and functionality to joke generator.
+- Add additional styling and functionality to joke generator
 
 ## Author
 
