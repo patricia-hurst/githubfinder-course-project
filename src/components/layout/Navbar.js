@@ -6,7 +6,7 @@ import { PropTypes } from 'prop-types';
 const Navbar = props => {
   return (
     <header>
-      <nav className="navbar bg-teal-600 text-slate-200 dark:bg-neutral">
+      <nav className="navbar h-16 bg-teal-600 text-slate-200 dark:bg-neutral">
         <div className="container mx-auto">
           <div className="flex items-center justify-between w-full">
             <div className="nav-left border-b-2 border-transparent">

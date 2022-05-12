@@ -5,7 +5,7 @@ import Wrapper from '../components/ui/Wrapper';
 
 const Home = () => {
   return (
-    <main className="mt-12 px-2 grow overflow-x-hidden">
+    <main className="mt-12 md:mt-24 px-2">
       <Wrapper>
         <JokesSelect />
         <JokesResults />

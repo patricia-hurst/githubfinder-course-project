@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  /* prevent sticky footer from blocking content when screen
+  height is very small (scroll allows seeing all content) 
+  // margin-bottom matches footer height */
+  margin-bottom: 4rem;
+}
+
+/* styles for horizontal flipping joke card (twopart jokes) */
+.joke-card {
+  perspective: 1000px;
+}
+
+.joke-card-inner {
+  transform-style: preserve-3d;
+}
+
+.joke-card:hover .joke-card-inner {
+  transform: rotateY(180deg);
+}
+
+.joke-card-front,
+.joke-card-back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotateX(0deg); /* firefox fix, otherwise text on both sides show */
+}
+
+.joke-card-back {
+  transform: rotateY(180deg);
+}
