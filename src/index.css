@@ -2,13 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  /* prevent sticky footer from blocking content when screen
-  height is very small (scroll allows seeing all content) 
-  // margin-bottom matches footer height */
-  margin-bottom: 4rem;
-}
-
 /* styles for horizontal flipping joke card (twopart jokes) */
 .joke-card {
   perspective: 1000px;
