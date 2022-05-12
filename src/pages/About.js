@@ -3,7 +3,7 @@ import Wrapper from '../components/ui/Wrapper';
 const About = () => {
   return (
     <Wrapper>
-      <div className="text-slate-600 dark:text-neutral-content">
+      <div className="mt-12 md:mt-24 text-slate-600 dark:text-neutral-content">
         <h1 className="text-3xl font-bold mb-8">About</h1>
         <p>
           This simple joke generator was built in order to practice core React

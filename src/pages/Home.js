@@ -5,12 +5,12 @@ import Wrapper from '../components/ui/Wrapper';
 
 const Home = () => {
   return (
-    <Wrapper>
-      <main>
+    <main className="mt-12 md:mt-24 px-2">
+      <Wrapper>
         <JokesSelect />
         <JokesResults />
-      </main>
-    </Wrapper>
+      </Wrapper>
+    </main>
   );
 };
 
