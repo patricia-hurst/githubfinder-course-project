@@ -8,11 +8,10 @@ This is a simple joke generator utilizing the open-source JokeAPI which can be f
 - [Built with](#built-with)
 - [Continued development](#continued-development)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](coming soon)
+- Live Site URL: [https://simple-joke-generator-react.vercel.app/]
 
 ### Built with
 
@@ -20,11 +19,10 @@ This is a simple joke generator utilizing the open-source JokeAPI which can be f
 - React Icons
 - DaisyUI
 - Tailwindcss
-- Axios
 
 ### Continued development
 
-- Add additional styling and functionality to joke generator; add "About" page content. Add a link to the JokeAPI in the footer.
+- Add additional styling and functionality to joke generator
 
 ## Author
 
