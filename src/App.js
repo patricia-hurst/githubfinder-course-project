@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { JokeProvider } from './context/JokeContext';
 
 import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
 import Background from './components/ui/Background';
 
 import Home from './pages/Home';
@@ -21,7 +20,6 @@ const App = () => {
             <Route path="/notfound" element={<NotFound />} />
             <Route path="/*" element={<NotFound />} />
           </Routes>
-          <Footer />
         </Background>
       </Router>
     </JokeProvider>
