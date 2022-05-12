@@ -8,7 +8,7 @@ const JokesResults = () => {
   const { jokes, loading } = useContext(JokeContext);
 
   const jokesHtml = (
-    <div className="joke-card bg-transparent p-4 h-80 w-96 text-center">
+    <div className="joke-card bg-transparent p-4 h-80 w-80 md:w-96 text-center">
       {/* joke-card-inner-single from conditional makes sure that the hover effect for card flip animation isn't triggered for single part jokes */}
       <div
         className={`${
